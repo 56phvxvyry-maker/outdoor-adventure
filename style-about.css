@@ -1,0 +1,82 @@
+/* Style qui s'applique à l'ensemble de la page */
+
+html, body {
+    margin: 0;
+    padding: 0px; 
+   font-family: Arial, sans-serif;
+}
+
+/* Style qui s'applique au header */
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(./assets/images/about-bg-5.jpg.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 75vh;
+    background-color: white;
+}
+
+/* Style qui s'applique à la barre de navigation */
+
+nav {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 2em 0
+}
+
+/* Style qui s'applique au logo */
+
+.logo img {
+    width: 150px;
+    height: 42px;
+}
+
+/* Style qui s'applique à la balise links et à sa liste de liens */
+
+.links {
+    width: 60%;
+}
+
+.links ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.links li {
+    list-style-type: none;
+}
+
+/* Style qui s'applique aux ancres des liens de la page*/
+
+.links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    padding-bottom: 0.5em;
+    background-size: 0% 0.1em;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+     align-items: center;
+    color: white;
+    font-size: 70px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+     align-items: center;
+    color: white;
+    font-size: 13px;
+    background-color: red;
+    border: none;
+    padding: 1em 2em;
+    cursor: pointer;
+}
