@@ -37,13 +37,15 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 /* Style qui s'applique à la barre de navigation */
 
 nav {
+    position: absolute;
+    top: 0;
     width: 80%;
-    /* margin: 0 auto; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -141,7 +143,6 @@ hr {
     justify-content: center;
     align-items: center;
     color: white;
-    height: 50%;
     flex-direction: column;
     font-size: 25px;
 }
@@ -163,7 +164,11 @@ hr {
     font-family: "Montserrat", sans-serif;
 }
 
-.Upcoming {
+.upcoming-events {
+    padding: 50px 0;
+}
+
+.upcoming {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -171,7 +176,7 @@ hr {
     margin-bottom: 20px;
 }
 
-.Everest {
+.everest {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -190,43 +195,78 @@ h5 {
     align-items: center;
 }
 
-.Everest .card {
+.everest .card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.Everest p {
+.everest p {
     width: 475px;
 }
 
-.Explore {
+.explore {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/images/section-bg-img.jpg.webp);
     background-size: cover;
     background-attachment: fixed;
-    width: 100%;
+    width: 100vw;
     height: 50vh;
 }
 
-.Explore-2 {
+.explore-2 {
     display: block;
     justify-content: center;
     align-items: flex-end;
     color: white;
     flex-direction: column;
     margin-left: 50%;
-    padding-top: 7%;
-} 
-.Explore p {
+}
+
+.explore p {
     width: 500px;
 }
 
-.Upcoming-Tours {
-   display: flex;
-   justify-content: flex-start;
-   padding-top: 10px;
-   padding-right: 60px;
+.upcoming-tours {
+    display: flex;
+    justify-content: center;
+}
+
+.upcoming-tours-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: flex-start;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    /* margin-left: 92.5px;
+   margin-right: 92.5px; */
+    width: 80%;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.gallery img {
+    object-fit: cover;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.upcoming-tours .button {
+    justify-content: flex-start;
 }
 
 footer {
