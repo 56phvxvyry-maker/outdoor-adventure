@@ -164,6 +164,12 @@ hr {
     font-family: "Montserrat", sans-serif;
 }
 
+.citation p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
 .upcoming-events {
     padding: 50px 0;
 }
@@ -276,4 +282,40 @@ footer {
     color: white;
     background-color: black;
     padding: 40px;
+}
+
+#burger-menu {
+    display: none;
+}
+
+@media(max-width:1024px) {
+    .links ul {
+        gap: 10px;
+    }
+}
+
+@media(max-width:768px) {
+    .links {
+        display: none;
+    }
+
+    #burger-menu {
+        display: block;
+    }
+
+    .everest {
+        flex-direction: column;
+    }
+
+    .explore {
+        flex-direction: column;
+    }
+
+    .explore p {
+        width: 300px;
+    }
+
+    .citation p {
+        width: 550px;
+    }
 }
