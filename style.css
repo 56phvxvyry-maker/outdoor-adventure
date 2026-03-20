@@ -75,6 +75,7 @@ nav {
 
 .links li {
     list-style-type: none;
+
 }
 
 /* Style qui s'applique aux ancres des liens de la page*/
@@ -208,6 +209,10 @@ h5 {
     align-items: center;
 }
 
+.everest img {
+    box-shadow: 10px 5px 5px silver;
+}
+
 .everest p {
     width: 475px;
 }
@@ -248,8 +253,6 @@ h5 {
     align-items: flex-start;
     padding-top: 120px;
     padding-bottom: 120px;
-    /* margin-left: 92.5px;
-   margin-right: 92.5px; */
     width: 80%;
 }
 
@@ -288,19 +291,18 @@ footer {
     display: none;
 }
 
-@media(max-width:1024px) {
-    .links ul {
-        gap: 10px;
-    }
-}
 
-@media(max-width:768px) {
+@media(max-width:1024px) {
     .links {
         display: none;
     }
 
     #burger-menu {
         display: block;
+    }
+
+    .links ul {
+        gap: 10px;
     }
 
     .everest {
@@ -315,5 +317,41 @@ footer {
         width: 300px;
     }
 
-
+    .upcoming-tours-grid {
+        grid-template-columns: 1fr;
+    }
 }
+
+@media(max-width:768px) {
+    .links {
+        display: none;
+    }
+
+    #burger-menu {
+        display: block;
+    }
+
+    .links ul {
+        gap: 10px;
+    }
+
+    .everest {
+        flex-direction: column;
+    }
+
+    .explore {
+        flex-direction: column;
+    }
+
+    .explore p {
+        width: 200px;
+    }
+
+    .upcoming-tours-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* @media(max-width:460px) {
+    
+} */
