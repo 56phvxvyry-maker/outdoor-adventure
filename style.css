@@ -352,7 +352,7 @@ footer {
     }
 
     .explore {
-        flex-direction: column;
+        justify-content: center;
     }
 
     p {
