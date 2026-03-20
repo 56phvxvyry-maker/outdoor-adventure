@@ -323,18 +323,6 @@ footer {
 }
 
 @media(max-width:768px) {
-    .links {
-        display: none;
-    }
-
-    #burger-menu {
-        display: block;
-    }
-
-    .links ul {
-        gap: 10px;
-    }
-
     .everest {
         flex-direction: column;
     }
@@ -346,17 +334,19 @@ footer {
     .explore p {
         width: 200px;
     }
-
-    .upcoming-tours-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .everest img {
-        width: 237.5px;
-        height: 148.5px;
-    }
 }
 
-/* @media(max-width:460px) {
-    
-} */
+
+@media(max-width:460px) {
+    .everest {
+        flex-direction: column;
+    }
+
+    .explore {
+        flex-direction: column;
+    }
+
+    .explore p {
+        width: 200px;
+    }
+}
