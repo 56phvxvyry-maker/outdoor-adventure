@@ -214,7 +214,10 @@ h5 {
 }
 
 .everest p {
-    width: 350px;
+    /* width: 350px; */
+    /* max-width: 100%; */
+    font-size: clamp(14px, 2vw, 18px);
+    line-height: 1.5;
 }
 
 .explore {
