@@ -34,22 +34,19 @@ header {
     width: 100%;
     height: 75vh;
     font-family: "Noto Sans", sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
 }
 
 /* Style qui s'applique à la barre de navigation */
 
 nav {
-    position: absolute;
     top: 0;
     width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2em 0;
+    margin: auto;
+    padding-top: 16px;
 }
 
 /* Style qui s'applique au logo */
@@ -146,6 +143,7 @@ hr {
     color: white;
     flex-direction: column;
     font-size: 25px;
+    margin-top: 150px;
 }
 
 .wonderful>* {
@@ -192,8 +190,7 @@ hr {
 }
 
 .card img {
-    height: 297px;
-    width: 475px;
+    width: 100%;
 }
 
 h5 {
@@ -221,9 +218,9 @@ h5 {
 }
 
 .explore {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    justify-content: end;
+    align-items: center;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/images/section-bg-img.jpg.webp);
     background-size: cover;
     background-attachment: fixed;
@@ -232,12 +229,7 @@ h5 {
 }
 
 .explore-2 {
-    display: block;
-    justify-content: center;
-    align-items: flex-end;
     color: white;
-    flex-direction: column;
-    margin-left: 50%;
 }
 
 .explore p {
@@ -317,14 +309,6 @@ footer {
         background-size: cover;
     }
 
-    .explore p {
-        width: 300px;
-    }
-
-
-    .everest p {
-        width: 350px;
-    }
 
     .upcoming-tours-grid {
         grid-template-columns: 1fr;
@@ -341,16 +325,24 @@ footer {
     }
 
     .explore {
-        flex-direction: column;
+        justify-content: center;
     }
 
-    .explore p {
-        width: 200px;
+    header {
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 340px;
     }
 
-    .everest p {
-        width: 350px;
+    header h1 {
+        font-size: 18px;
     }
+
+    header h3 {
+        font-size: 16px;
+    }
+
+
 }
 
 
@@ -363,11 +355,22 @@ footer {
         flex-direction: column;
     }
 
-    .explore p {
-        width: 200px;
+    p {
+        font-size: 14px;
     }
 
-    .everest p {
-        width: 350px;
+    main {}
+
+    header {
+        height: 220px;
+    }
+
+    .logo img {
+        width: 75px;
+        height: 20px;
+    }
+
+    .wonderful {
+        margin-top: 1px;
     }
 }
