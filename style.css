@@ -350,6 +350,11 @@ footer {
     .upcoming-tours-grid {
         grid-template-columns: 1fr;
     }
+
+    .everest img {
+        width: 237.5px;
+        height: 148.5px;
+    }
 }
 
 /* @media(max-width:460px) {
