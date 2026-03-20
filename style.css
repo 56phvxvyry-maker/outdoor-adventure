@@ -318,6 +318,11 @@ footer {
         width: 300px;
     }
 
+
+    .everest p {
+        width: 350px;
+    }
+
     .upcoming-tours-grid {
         grid-template-columns: 1fr;
     }
@@ -339,6 +344,10 @@ footer {
     .explore p {
         width: 200px;
     }
+
+    .everest p {
+        width: 350px;
+    }
 }
 
 
@@ -355,7 +364,7 @@ footer {
         width: 200px;
     }
 
-    /* .everest p {
-        padding: 20px;
-    } */
+    .everest p {
+        width: 350px;
+    }
 }
