@@ -214,7 +214,7 @@ h5 {
 }
 
 .everest p {
-    width: 475px;
+    width: 350px;
 }
 
 .explore {
@@ -311,6 +311,7 @@ footer {
 
     .explore {
         flex-direction: column;
+        background-size: cover;
     }
 
     .explore p {
@@ -319,6 +320,10 @@ footer {
 
     .upcoming-tours-grid {
         grid-template-columns: 1fr;
+    }
+
+    header {
+        background-size: cover;
     }
 }
 
@@ -349,4 +354,8 @@ footer {
     .explore p {
         width: 200px;
     }
+
+    /* .everest p {
+        padding: 20px;
+    } */
 }
